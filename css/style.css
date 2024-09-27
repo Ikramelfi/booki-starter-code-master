@@ -115,12 +115,14 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 8px 0 0 8px;
     padding: 11px;
+    width: 15px;
+    height: 15px;
 }
 
 #search-localisation {
     border: 1px solid var(--main-bg-color);
     background-color: white;
-    padding: 10px
+    padding: 10.5px
 }
 
 #submit-localisation {
@@ -564,7 +566,7 @@ a {
 
         padding-left: 5%;
         margin-top: 5%;
-        padding: 0 10% ;
+        padding: 0 10%;
     }
 
 
