@@ -26,20 +26,22 @@
         </header>
 
         <main>
-            <section>
+            <section id="section-main">
                 <div id="box-top">
                     <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
 
-                <div>
+                <div id="container-localisation">
                     <form id="localisation" action="/recherche" method="get">
                         <img id="icon-localisation"
                             src="https://icons.iconarchive.com/icons/fa-team/fontawesome/128/FontAwesome-Location-Dot-icon.png"
                             alt="icon localisation">
                         <input type="search" id="search-localisation" name="query" placeholder="Rechercher...">
-                        <button type="submit" id="submit-localisation">Rechercher</button>
-                        <i id="icon-submit" class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                        <button type="submit" id="submit-localisation">
+                            <span id="span-submit">Rechercher</span>
+                            <i id="icon-submit" class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                        </button>   
                     </form>
                 </div>
 
@@ -152,7 +154,7 @@
                 <section id="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
 
-                    <div class="hebergements-card">
+                    <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg"
@@ -282,11 +284,9 @@
                                 </div>
                             </article>
                         </a>
-                        <div>
-                            <a href="#">
-                                <h3>Afficher plus</h3>
-                            </a>
-                        </div>
+                    </div>
+                    <div>
+                        <button type="button" id="bouton-action">Afficher plus</button>
                     </div>
                 </section>
 
@@ -298,27 +298,27 @@
 
                 <h2>Activités à Marseille</h2>
 
-                <div class="section-activites-card">
+                <div class="section-activites-cards">
                     <a href="#">
-                        <article class="activites-card">
+                        <article class="activites-cards">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Activités à faire à Marseille">
                             <h3>Vieux-port</h3>
                         </article>
                     </a>
                     <a href="#">
-                        <article class="activites-card">
+                        <article class="activites-cards">
                             <img src="./images/activites/paul-hermann.jpg" alt="Activités à faire à Marseille">
                             <h3>Fort de Pomègues</h3>
                         </article>
                     </a>
                     <a href="#">
-                        <article class="activites-card">
+                        <article class="activites-cards">
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="Activités à faire à Marseille">
                             <h3>Parc national des Calanques</h3>
                         </article>
                     </a>
                     <a href="#">
-                        <article class="activites-card">
+                        <article class="activites-cards">
                             <img src="./images/activites/florian-wehde.jpg" alt="Activités à faire à Marseille">
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </article>
