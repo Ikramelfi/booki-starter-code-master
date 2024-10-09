@@ -22,7 +22,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0px 50px;
     box-sizing: border-box;
 }
 
@@ -88,7 +88,7 @@ a {
     border-top: 5px solid transparent;
 }
 
-#link-header > a:hover {
+#link-header>a:hover {
     color: var(--main-color);
     border-top: 5px solid var(--main-color);
 }
@@ -155,6 +155,7 @@ a {
     border-radius: 25px;
     padding: 7px 10px;
     font-weight: bold;
+    background-color: white;
 }
 
 .filtres>*:first-child {
@@ -164,6 +165,10 @@ a {
 
 .filtres:hover {
     background-color: #DEEBFF;
+}
+
+#filtres-title {
+    font-weight: bold;
 }
 
 #section-cercle-info {
@@ -184,6 +189,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#texte-info {
+    color: black;
+    font-size: 13px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -334,9 +344,19 @@ a {
 /****** Footer ***********/
 #footer {
     display: flex;
-    gap: 235px;
+    justify-content: space-around;
     background-color: var(--main-bg-color);
-    padding-left: 20px;
+    padding-left: 15px;
+}
+
+#footer div {
+    width: 33%;
+    padding: 0px 10px 15px 10;
+}
+
+#footer a {
+    display: block;
+    padding: 0 0 10px 5px;
 }
 
 
@@ -345,7 +365,7 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (width < 1024px) {
+@media (max-width: 1024px) {
     body {
         margin: 0;
     }
@@ -422,16 +442,13 @@ a {
     /****** Footer ***********/
     #footer {
         display: flex;
-        gap: 15%;
         background-color: var(--main-bg-color);
         width: 100%;
     }
-
-
 }
 
 /* Small devices (phones, less than 768px) */
-@media (width < 768px) {
+@media (max-width: 768px) {
     body {
         margin: 0;
         width: 100%;
@@ -465,7 +482,7 @@ a {
         border-top: 3px solid transparent;
     }
 
-    #link-header > a {
+    #link-header>a {
         display: flex;
         justify-content: center;
         flex: 1;
@@ -474,12 +491,12 @@ a {
         border-bottom: 3px solid var(--main-bg-color);
     }
 
-    #link-header > a:hover {
+    #link-header>a:hover {
         border: none;
         border-bottom: 3px solid var(--main-color);
     }
 
-    #section-main {
+    #section-header-main {
         padding: 5%;
     }
 
@@ -499,7 +516,7 @@ a {
         margin: 0;
     }
 
-    #localisation > * {
+    #localisation>* {
         height: 100%;
     }
 
@@ -530,13 +547,12 @@ a {
         align-items: flex-start;
     }
 
+
     #nav-filtres {
-        display: flex;
+        display: grid;
+        grid-template-columns: 150px 150px;
         flex-wrap: wrap;
-    }
-    
-    .filtres {
-        flex: 1;
+        padding-top: 5px;
     }
 
     #section-cercle-info {
@@ -558,11 +574,11 @@ a {
 
     /****** Populaires ***********/
 
-    
+
     .populaires {
         margin-top: 0;
     }
-    
+
     .populaires-title>h2 {
         font-size: 20px;
     }
