@@ -656,20 +656,23 @@ a {
         flex-direction: column;
         width: 100%;
         gap: 15px;
+        padding-left: 0;
     }
+    
     #footer div {
-        padding-left: 25px;
-
+        max-width: 100%;
+        width: max-content;
+        padding: 15px 30px;
     }
 
     #footer h3 {
         margin-top: 15px;
         margin-bottom: 15px;
-        width: 768px;
+        width: 100%;
     }
 
     #footer a {
         padding: 0 0 10px 0px;
-        width: 768px;
+        width: 100%;
     }
 }
